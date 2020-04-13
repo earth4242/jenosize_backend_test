@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('klxhunter:server');
+var debug = require('debug')('jenosize:server');
 var http = require('http');
 
 /**
