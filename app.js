@@ -61,7 +61,7 @@ app.get('/game24' , async function (req , res , next) {
         tempinput.splice(i,1);
         var splicevalue = tempinput;
         for (var j = 0; j < 6; j++) {
-          if(i>0){
+          if(j>0){
             var tempshift = splicevalue[2];
             splicevalue.pop();
             splicevalue.unshift(tempshift);
