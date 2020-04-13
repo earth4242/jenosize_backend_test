@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KLxHunter</title>
+</head>
+<style>
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: white; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+</style>
+<body background='https://www.freepik.com/blog/app/uploads/2020/01/2927262.jpg'>
+  <div class="container">
+    <h1><font color="white">JENOSIZE BackEnd Test</font></h1>
+    <p><font color="white">Welcome to Thanapat Taweerat Site</font></p>
+    <ul>
+      <li><font color="white">Place Search ( Google API ) </font><input type="Text" id="dt_id" maxlength="25" size="25"/>
+        <input type='button' onclick="location.href='/getplace?text='+ document.getElementById('dt_id').value;" value='GO'></li>
+      <li><font color="white">Game24</font>
+        <input type="Text" id="x1" maxlength="25" size="5"/>
+        <input type="Text" id="x2" maxlength="25" size="5"/>
+        <input type="Text" id="x3" maxlength="25" size="5"/>
+        <input type="Text" id="x4" maxlength="25" size="5"/>
+        <input type='button' onclick="location.href='/game24?x1='+ document.getElementById('x1').value + '&x2=' + document.getElementById('x2').value + '&x3=' +document.getElementById('x3').value + '&x4=' +document.getElementById('x4').value;" value='GO'></li>
+    </ul>
+  </div>
+</body>
+</html>
