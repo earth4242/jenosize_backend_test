@@ -80,7 +80,7 @@ app.get('/game24' , async function (req , res , next) {
                   case 1 : operator[0]='-'; break;
                   case 2 : operator[0]='*'; break;
                   case 3 : operator[0]='/'; break;
-                }6
+                }
                 switch (b) {
                   case 0 : operator[1]='+'; break;
                   case 1 : operator[1]='-'; break;
